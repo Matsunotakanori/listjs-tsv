@@ -1,4 +1,4 @@
-no 	 title 	 series 	 auth 	 pub 	 pub_year 	 call_no 	 rgtn 	 url
+no 	 title 	 series 	 auth 	 pub 	 pub_year 	 call_no 	 rgtn 	 isbn  url
 1	貸出用PC1					||	99919130	99919130	https://private.calil.jp/bib/gk-2004648-3vl4e/99919130
 2	貸出用PC2					||	99919131	99919131	https://private.calil.jp/bib/gk-2004648-3vl4e/99919131
 3	貸出用PC3(MacBook Air A2681)					||	99919132	99919132	https://private.calil.jp/bib/gk-2004648-3vl4e/99919132
@@ -524,5 +524,6 @@ no 	 title 	 series 	 auth 	 pub 	 pub_year 	 call_no 	 rgtn 	 url
 524	書物学 １４ 贋作・偽作 人はなぜ、偽りの書籍を編纂するのか			勉誠出版	2018	020.5||ｼｮ	50697	9784585207146	https://private.calil.jp/bib/gk-2004648-3vl4e/9784585207146
 525	ＳＮＳ別最新著作権入門　「これって違法！？」の心配が消えるＩＴリテラシーを高める基礎知識		井上 拓 著	誠文堂新光社	2023	021.2||ｲﾉ	52260	9784416522820	https://private.calil.jp/bib/gk-2004648-3vl4e/9784416522820
 526	著作権の考え方	岩波新書Ｒ８６９	岡本　薫	岩波書店	2003	021.2||ｵｶ	37381	9784004308690	https://private.calil.jp/bib/gk-2004648-3vl4e/9784004308690
+
 
 
