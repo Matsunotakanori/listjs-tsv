@@ -44,10 +44,6 @@
             <dd class="auth"></dd>
             <dd class="pub"></dd>
             <dd class="pub_year"></dd>
-            <dd class="series"></dd>
-            <dd class="rgtn"></dd>
-            <dd class="call_no"></dd>
-            <dd class="url"></dd>
           </dl>
         </li>
       </ul>
@@ -82,7 +78,8 @@
       var options = {
         // 対象とするclass を指定
 //        valueNames: ['title', 'creator', 'publisher', 'ncid', 'language', 'edition', 'note', {name: 'url', attr: "href"}],
-          valueNames: ['title', 'series', 'auth', 'pub', 'pub_year', 'rgtn', 'call_no', 'url'],
+//         valueNames: ['title', 'series', 'auth', 'pub', 'pub_year', 'rgtn', 'call_no', 'url'],
+          valueNames: ['title', 'series', 'auth', 'pub', 'pub_year'],
        
         item: 'list-item',
         // fuzzy search
