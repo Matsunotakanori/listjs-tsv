@@ -40,11 +40,15 @@
         <li id="list-item">
           <p class="horizon"></p>
           <dl>
-            <dt class="書名"></dt>
-            <dd class="著者名"></dd>
-            <dd class="出版者"></dd>
-            <dd class="版年"></dd>
-            <dd class="叢書名等"></dd>
+            <dt class="title"></dt>
+            <dd class="auth"></dd>
+            <dd class="pub"></dd>
+            <dd class="pub_year"></dd>
+            <dd class="series"></dd>
+            <dd class="rgtn"></dd>
+            <dd class="contents"></dd>
+            <dd class="call_no"></dd>
+            <dd class="url"></dd>
           </dl>
         </li>
       </ul>
@@ -79,7 +83,7 @@
       var options = {
         // 対象とするclass を指定
 //        valueNames: ['title', 'creator', 'publisher', 'ncid', 'language', 'edition', 'note', {name: 'url', attr: "href"}],
-          valueNames: ['書名', '著者名', '出版社', '版年', '叢書名等'],
+          valueNames: ['title', 'auth', 'pub', 'pub_year', 'series', 'rgtn', 'call_no', 'contents', 'url'],
         item: 'list-item',
         // fuzzy search
         plugins: [
