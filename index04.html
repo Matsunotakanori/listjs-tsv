@@ -42,12 +42,6 @@
           <dl>
             <dt class="title"></dt>
             <dd class="auth"></dd>
-            <dd class="ser"></dd>
-            <dd class="pub"></dd>
-            <dd class="pubyr"></dd>
-            <dd class="isbn"></dd>
-            <dd class="rgtn"></dd>
-
           </dl>
         </li>
       </ul>
@@ -78,7 +72,8 @@
       // List.jsの動作パラメータ設定
       var options = {
         // 対象とするclass を指定
-        valueNames: ['title', 'auth', 'ser', 'pub', 'pubyr', 'isbn', 'rgtn'],
+        // valueNames: ['title', 'auth', 'ser', 'pub', 'pubyr', 'isbn', 'rgtn'],
+        valueNames: ['title', 'auth'],
         item: 'list-item',
         // fuzzy search
         plugins: [
