@@ -23,6 +23,7 @@
       <div class="col-md-8">
         <input id="keyword" class="search form-control form-control-lg" placeholder="input any word" size="50" />
       </div>
+<! --
       <div class="col-md-4">
         <select id="lang"  class="form-control form-control-lg" onChange="List();">
           <option value="any"> --- </option>
@@ -31,6 +32,8 @@
           <option value="chi">中国語</option>
         </select>
       </div>
+      -->
+      
     </div>
     <span id="hits"></span>
     <div class="form-group">
@@ -100,22 +103,23 @@
         listObj.search(searchString);
         $('#hits').html(listObj.matchingItems.length + "件ヒットしました");
       });
+      
       // 項目指定フィルター（文字列部分一致）
-      $('#lang').change(function() { // プルダウンメニューのlangをフィルターで使用
-        lang = $('option:selected').val();
-        listObj.filter(function(item) {
-          if (lang === 'any') {
-            return true;
-          }
-          else if (item.values().language.indexOf(lang) > -1) {
-            return true;
-          }
-          else {
-            return false;
-          }
-        });
-        $('#hits').html(listObj.matchingItems.length + "件ヒットしました");
-      });
+      // $('#lang').change(function() { // プルダウンメニューのlangをフィルターで使用
+      //   lang = $('option:selected').val();
+      //  listObj.filter(function(item) {
+      //    if (lang === 'any') {
+      //      return true;
+      //    }
+      //    else if (item.values().language.indexOf(lang) > -1) {
+      //       return true;
+      //    }
+      //    else {
+      //      return false;
+      //    }
+      //  });
+      //  $('#hits').html(listObj.matchingItems.length + "件ヒットしました");
+      // });
     }).catch(function(error){
      // error
     });
