@@ -82,7 +82,7 @@
       // List.jsの動作パラメータ設定
       var options = {
         // 対象とするclass を指定
-<! --
+
         valueNames: ['title', 'creator', 'publisher', 'ncid', 'language', 'edition', 'note', {name: 'url', attr: "href"}],
         -->
         valueNames: ['isbn', 'rgtn', 'title', 'ser', 'auth', 'pub', 'pubyr'],
@@ -109,23 +109,23 @@
         listObj.search(searchString);
         $('#hits').html(listObj.matchingItems.length + "件ヒットしました");
       });
-  <!-- 
+
       // 項目指定フィルター（文字列部分一致）
       
-      $('#lang').change(function() { // プルダウンメニューのlangをフィルターで使用
-        lang = $('option:selected').val();
-        listObj.filter(function(item) {
-          if (lang === 'any') {
-            return true;
-          }
-          else if (item.values().language.indexOf(lang) > -1) {
-            return true;
-          }
-          else {
-            return false;
-          }
-        });
-        -->
+      // $('#lang').change(function() { // プルダウンメニューのlangをフィルターで使用
+      //  lang = $('option:selected').val();
+      //   listObj.filter(function(item) {
+      //    if (lang === 'any') {
+      //      return true;
+      //    }
+      //    else if (item.values().language.indexOf(lang) > -1) {
+      //      return true;
+      //    }
+      //    else {
+      //      return false;
+      //    }
+      //    });
+        
         $('#hits').html(listObj.matchingItems.length + "件ヒットしました");
       });
     }).catch(function(error){
