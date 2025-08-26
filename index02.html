@@ -82,9 +82,8 @@
       // List.jsの動作パラメータ設定
       var options = {
         // 対象とするclass を指定
+        // valueNames: ['title', 'creator', 'publisher', 'ncid', 'language', 'edition', 'note', {name: 'url', attr: "href"}],
 
-        valueNames: ['title', 'creator', 'publisher', 'ncid', 'language', 'edition', 'note', {name: 'url', attr: "href"}],
-        -->
         valueNames: ['isbn', 'rgtn', 'title', 'ser', 'auth', 'pub', 'pubyr'],
         item: 'list-item',
         // fuzzy search
