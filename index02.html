@@ -41,9 +41,7 @@
           <dl>
             <dt class="title"></dt>
             <dt class="auth"></dt>
-            <dt class="pub">
-            <dd class="pubyr">
-            </dd>              
+            <dt class="pub1"></dt>              
             </dt>
 
               <!--
@@ -69,7 +67,7 @@
   <script>
 //    const input_file = "cat10000_url.tsv"; // 入力ファイル指定
     const input_file = "sample004_out.tsv"; // 入力ファイル指定
-
+　　let pub1 = pub + ", " + pubyr;
     d3.tsv(input_file).then(function(values) {
       // fuzzy search設定
       var fuzzyOptions = {
@@ -84,7 +82,7 @@
         // 対象とするclass を指定
         // valueNames: ['title', 'creator', 'publisher', 'ncid', 'language', 'edition', 'note', {name: 'url', attr: "href"}],
 
-        valueNames: ['title', 'auth', 'pub', 'pubyr'],
+        valueNames: ['title', 'auth', 'pub1'],
         item: 'list-item',
         // fuzzy search
         plugins: [
