@@ -41,7 +41,15 @@
           <dl>
             <dt class="title"></dt>
             <dt class="auth"></dt>
-            <dt class="pub"></dt>              
+            <dt class="pub"></dt> 
+            <dt class="pubyr"></dt> 
+            <dt class="ser"></dt> 
+            <dt class="isbn"></dt> 
+            <dt class="cls1"></dt> 
+            <dt class="cls2"></dt> 
+            <dt class="cls3"></dt> 
+            <dt class="rgtn"></dt> 
+            <dt class="ymd"></dt> 
             </dt>
 
               <!--
@@ -82,7 +90,7 @@
         // 対象とするclass を指定
         // valueNames: ['title', 'creator', 'publisher', 'ncid', 'language', 'edition', 'note', {name: 'url', attr: "href"}],
 
-        valueNames: ['title', 'auth', 'pub'],
+        valueNames: ['title', 'auth', 'pub', 'pubyr', 'ser', 'cls1', 'cls2', 'cls3', 'isbn', 'rgtn', 'ymd'],
         item: 'list-item',
         // fuzzy search
         plugins: [
